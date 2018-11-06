@@ -29,9 +29,6 @@
   "devDependencies": {
     "nodemon": "^1.18.4"
   },
-  "production": {
-    "use_env_variable":"DATABASE_URL"
-   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LuisAbaunzaR/sd_backend.git"
