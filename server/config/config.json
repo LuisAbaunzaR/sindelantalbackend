@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "cobmfykk",
+    "password": "ZmAKGsXgmYzUgqMwca1lzEbc368so3Ka",
+    "database": "cobmfykk",
+    "host": "baasu.db.elephantsql.com",
+    "dialect": "postgres",
+    "timezone": "-05:00",
+    "operatorsAliases": "false"
+
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "timezone": "-05:00"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "timezone": "-05:00"
+  }
+}
