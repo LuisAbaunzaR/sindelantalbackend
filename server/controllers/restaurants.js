@@ -1,4 +1,4 @@
-const {Restaurants,Users} = require("../models");
+const {Restaurants,Users,Dishes} = require("../models");
 
 const createRestaurant = async(req,res) =>{
 
@@ -38,10 +38,24 @@ const getOneRestaurants = async(req,res) => {
     return res.status(200).json(oneRestaurant)
 }
 
+const getOneRestaurantsDishes = async(req,res) => { 
+    let OneRestaurantsDishes = await Restaurants.findOne({where:{id:req.params.id},
+        include:[
+            {
+                model:Dishes,
+                as:"dishes"
+            }
+        
+  
+]})
+    return res.status(200).json(OneRestaurantsDishes)
+}
+
 
 
 module.exports = {
    createRestaurant,
    getAllRestaurants,
-   getOneRestaurants
+   getOneRestaurants,
+   getOneRestaurantsDishes
 }

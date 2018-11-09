@@ -2,8 +2,8 @@ const verifyToken= require("../resolvers/verifyToken");
 
 module.exports = async(req,res,next)=>{
     try{
-        console.log("Este es el req headers")
-        console.log(req.headers)
+     //   console.log("Este es el req headers")
+     //   console.log(req.headers)
         let {authorization} = req.headers
        // let {level} =req.headers   aqui busco la etiqueta level y la asigno a req.headers
         let user = await verifyToken(authorization)
