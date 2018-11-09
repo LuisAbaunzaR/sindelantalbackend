@@ -20,7 +20,7 @@ router.get('/users/admin',isAuthenticated,isAdmited,getAllUsers)
 router.post('/restaurants',isAuthenticated,createRestaurant)
 router.get('/restaurants/',getAllRestaurants)
 router.get('/restaurants/:id',isAuthenticated,getOneRestaurants)
-router.get('/restaurants/dish/:id',isAuthenticated,getOneRestaurantsDishes)
+router.get('/restaurants/dishes/:id',isAuthenticated,getOneRestaurantsDishes)
 
 router.post('/dishes',isAuthenticated,createDishes)
 router.get('/dishes',getAllDishes)
